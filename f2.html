@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Function2</title>
+<style type="text/css">
+span{
+color:#ffffff;
+font-size:30px;
+}
+input{
+font-size:18px;
+padding:5px;
+border-radius:6px;
+}
+</style>
+<script language="javascript">
+function demo()
+{
+ var a,b
+a=new Date()
+b=a.getHours()
+if(b<=12)
+{
+ document.f1.a1.value=a.getHours()+":"+a.getMinutes()+":"
++a.getSeconds()+"am"
+}
+ else
+{
+ document.f1.a1.value=a.getHours()+":"+a.getMinutes()+":"
++a.getSeconds()+"Pm"
+}
+ }
+</script>
+</head>
+<body bgcolor="teal" onload="demo()">
+<form name="f1">
+<span>Time:</span>
+<input type="text" name="a1">
+</form>
+</body>
+</html>
