@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Val</title>
+<style type="text/css">
+td{
+color:#ffffff;
+font-size:25px;
+}
+input{
+font-size:19px;
+border-radius:6px;
+padding:5px;
+}
+</style>
+<script language="javascript">
+function demo()
+{
+ var x=document.getElementById("a")
+ if(x.type=="password")
+{
+x.type="text"
+}
+else{
+x.type="password"
+ }   
+}
+</script>
+</head>
+<body bgcolor="teal">
+<form>
+<table width="640" border="0" bordercolor="white" align="center"
+cellpadding="5">
+<tr>
+<td>User Name</td>
+<td>
+<input type="text" pattern="^[A-Za-z_]{1,20}$" placeholder="gouss">
+</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>
+<input type="password" id="a" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" 
+placeholder="gouss@7899">
+<input type="checkbox" onclick="demo()">
+</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>
+<input type="text" pattern="[\+]\d{2}[\-]\d{10}" placeholder="+91-9000011000">
+</td>
+</tr>
+<tr>
+<td>Email id</td>
+<td>
+<input type="email" placeholder="gouss@gmail.com">
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
